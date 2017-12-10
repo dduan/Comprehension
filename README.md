@@ -15,14 +15,32 @@ Array(letters, numbers, where: { $1 % 2 != 0 }) { "\($0)\($1)" }
 
 ## Installation
 
-For Swift Package Manager, add to your dependencies:
+### Swift Package Manager
 
 ```swift
 .package(url: "git@github.com:dduan/Comprehension.git", .branch("master")),
 
 ```
 
-… and `"Comprehension"` to the target's dependencies.
+(and `"Comprehension"` to the target's dependencies.)
+
+### CocoaPods
+
+```
+use_frameworks!
+
+pod "Comprehension"
+```
+
+### Carthage
+
+```
+github "dduan/Comprehension"
+```
+
+### Direct Embed
+
+Include `Sources/Comprehension/Comprehension.swift` in your project.
 
 ## What's List Comprehension?
 
