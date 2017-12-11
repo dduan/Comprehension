@@ -7,7 +7,7 @@ extension Array {
         where predicate: ((E0) -> Bool)? = nil,
         transform: (E0) -> Element
     ) where
-        S0: Sequence, S0.Element == E0
+        S0: Collection, S0.Element == E0
     {
         self.init()
         self.reserveCapacity(s0.underestimatedCount)
@@ -27,8 +27,8 @@ extension Array {
         where predicate: ((E0, E1) -> Bool)? = nil,
         transform: (E0, E1) -> Element
     ) where
-        S0: Sequence, S0.Element == E0,
-        S1: Sequence, S1.Element == E1
+        S0: Collection, S0.Element == E0,
+        S1: Collection, S1.Element == E1
     {
         self.init()
         self.reserveCapacity(s0.underestimatedCount * s1.underestimatedCount)
@@ -50,9 +50,9 @@ extension Array {
         where predicate: ((E0, E1, E2) -> Bool)? = nil,
         transform: (E0, E1, E2) -> Element
     ) where
-        S0: Sequence, S0.Element == E0,
-        S1: Sequence, S1.Element == E1,
-        S2: Sequence, S2.Element == E2
+        S0: Collection, S0.Element == E0,
+        S1: Collection, S1.Element == E1,
+        S2: Collection, S2.Element == E2
     {
         self.init()
         self.reserveCapacity(
@@ -80,10 +80,10 @@ extension Array {
         where predicate: ((E0, E1, E2, E3) -> Bool)? = nil,
         transform: (E0, E1, E2, E3) -> Element
     ) where
-        S0: Sequence, S0.Element == E0,
-        S1: Sequence, S1.Element == E1,
-        S2: Sequence, S2.Element == E2,
-        S3: Sequence, S3.Element == E3
+        S0: Collection, S0.Element == E0,
+        S1: Collection, S1.Element == E1,
+        S2: Collection, S2.Element == E2,
+        S3: Collection, S3.Element == E3
     {
         self.init()
         self.reserveCapacity(
@@ -114,11 +114,11 @@ extension Array {
         where predicate: ((E0, E1, E2, E3, E4) -> Bool)? = nil,
         transform: (E0, E1, E2, E3, E4) -> Element
     ) where
-        S0: Sequence, S0.Element == E0,
-        S1: Sequence, S1.Element == E1,
-        S2: Sequence, S2.Element == E2,
-        S3: Sequence, S3.Element == E3,
-        S4: Sequence, S4.Element == E4
+        S0: Collection, S0.Element == E0,
+        S1: Collection, S1.Element == E1,
+        S2: Collection, S2.Element == E2,
+        S3: Collection, S3.Element == E3,
+        S4: Collection, S4.Element == E4
     {
         self.init()
         self.reserveCapacity(
@@ -153,12 +153,12 @@ extension Array {
         where predicate: ((E0, E1, E2, E3, E4, E5) -> Bool)? = nil,
         transform: (E0, E1, E2, E3, E4, E5) -> Element
     ) where
-        S0: Sequence, S0.Element == E0,
-        S1: Sequence, S1.Element == E1,
-        S2: Sequence, S2.Element == E2,
-        S3: Sequence, S3.Element == E3,
-        S4: Sequence, S4.Element == E4,
-        S5: Sequence, S5.Element == E5
+        S0: Collection, S0.Element == E0,
+        S1: Collection, S1.Element == E1,
+        S2: Collection, S2.Element == E2,
+        S3: Collection, S3.Element == E3,
+        S4: Collection, S4.Element == E4,
+        S5: Collection, S5.Element == E5
     {
         self.init()
         self.reserveCapacity(
@@ -196,13 +196,13 @@ extension Array {
         where predicate: ((E0, E1, E2, E3, E4, E5, E6) -> Bool)? = nil,
         transform: (E0, E1, E2, E3, E4, E5, E6) -> Element
     ) where
-        S0: Sequence, S0.Element == E0,
-        S1: Sequence, S1.Element == E1,
-        S2: Sequence, S2.Element == E2,
-        S3: Sequence, S3.Element == E3,
-        S4: Sequence, S4.Element == E4,
-        S5: Sequence, S5.Element == E5,
-        S6: Sequence, S6.Element == E6
+        S0: Collection, S0.Element == E0,
+        S1: Collection, S1.Element == E1,
+        S2: Collection, S2.Element == E2,
+        S3: Collection, S3.Element == E3,
+        S4: Collection, S4.Element == E4,
+        S5: Collection, S5.Element == E5,
+        S6: Collection, S6.Element == E6
     {
         self.init()
         self.reserveCapacity(
