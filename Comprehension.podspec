@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                  = 'Comprehension'
-  spec.version               = '0.0.1'
+  spec.version               = '0.0.2'
   spec.license               = { :type => 'MIT' }
   spec.homepage              = 'https://github.com/dduan/comprehension'
   spec.authors               = { 'Daniel Duan' => 'daniel@duan.ca' }
