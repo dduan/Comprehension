@@ -76,6 +76,7 @@ class ComprehensionTests: XCTestCase {
     }
 
     static var allTests = [
+        ("testMixedTypedComprehension", testMixedTypedComprehension),
         ("testOneDimentionalComprehension", testOneDimentionalComprehension),
         ("testTwoDimentionalComprehension", testTwoDimentionalComprehension),
         ("testThreeDimentionalComprehension", testThreeDimentionalComprehension),
