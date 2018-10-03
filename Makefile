@@ -4,7 +4,7 @@ export PATH := $(SWIFTENV_ROOT)/bin:$(SWIFTENV_ROOT)/shims:$(PATH)
 
 install-carthage:
 	brew remove carthage --force || true
-	brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/99f1f4fb87bfd047c7ccd43e58b46b8e44b63167/Formula/carthage.rb
+	brew install carthage
 
 install-swiftpm-linux:
 	git clone --depth 1 https://github.com/kylef/swiftenv.git ~/.swiftenv
@@ -19,7 +19,7 @@ test-iOS:
 		-project Comprehension.xcodeproj \
 		-scheme Comprehension \
 		-configuration Release \
-		-destination "name=iPhone 7,OS=10.1" \
+		-destination "name=iPhone X,OS=12.0" \
 		test
 
 test-macOS:
@@ -36,7 +36,7 @@ test-tvOS:
 		-project Comprehension.xcodeproj \
 		-scheme Comprehension \
 		-configuration Release \
-		-destination "name=Apple TV 1080p" \
+		-destination "platform=tvOS Simulator,name=Apple TV,OS=12.0" \
 		test
 
 test-carthage:
