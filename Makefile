@@ -19,7 +19,7 @@ test-iOS:
 		-project Comprehension.xcodeproj \
 		-scheme Comprehension \
 		-configuration Release \
-		-destination "name=iPhone 7,OS=10.1" \
+		-destination "name=iPhone X,OS=12.0" \
 		test
 
 test-macOS:
@@ -36,7 +36,7 @@ test-tvOS:
 		-project Comprehension.xcodeproj \
 		-scheme Comprehension \
 		-configuration Release \
-		-destination "name=Apple TV 1080p" \
+		-destination "platform=tvOS Simulator,name=Apple TV,OS=12.0" \
 		test
 
 test-carthage:
