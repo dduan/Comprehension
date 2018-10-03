@@ -4,7 +4,7 @@ export PATH := $(SWIFTENV_ROOT)/bin:$(SWIFTENV_ROOT)/shims:$(PATH)
 
 install-carthage:
 	brew remove carthage --force || true
-	brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/99f1f4fb87bfd047c7ccd43e58b46b8e44b63167/Formula/carthage.rb
+	brew install carthage
 
 install-swiftpm-linux:
 	git clone --depth 1 https://github.com/kylef/swiftenv.git ~/.swiftenv

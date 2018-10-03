@@ -1,5 +1,5 @@
-import XCTest
 import Comprehension
+import XCTest
 
 class ComprehensionTests: XCTestCase {
     func testMixedTypedComprehension() {
